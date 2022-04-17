@@ -1,0 +1,49 @@
+.register {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+  }
+  
+ 
+  
+  .register__container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid lightgrey;
+  }
+  
+  .register__container > h1 {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .register__container > form > h5 {
+    margin-bottom: 5px;
+  }
+  
+  .register__container > form > input {
+    margin-bottom: 10px;
+    width: 98%;
+    background-color: white;
+    height: 30px;
+  }
+  
+  .register__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  
+  .register__button {
+    background: rgb(240, 193, 75);
+    margin-top: 10px;
+    height: 30px;
+    border: 1px solid;
+    border-color: rgb(172, 128, 19);
+    width: 100%;
+  }
