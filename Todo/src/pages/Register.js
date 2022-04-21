@@ -3,6 +3,7 @@ import './Register.css'
 
 
 
+
 const App = () => {
 
 	
@@ -69,6 +70,8 @@ const App = () => {
 				<input type="submit" value="Register"  className="register__button"/>
 			</form>
 			</div>
+
+			
 			
 			
 

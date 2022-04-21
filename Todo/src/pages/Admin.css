@@ -1,0 +1,38 @@
+.admin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admin__element{
+   display:flex;
+   width:900px;
+   height: 60px;
+   background-color: rgb(145, 141, 138); 
+   margin:10px;
+   font-family:'Courier New', Courier, monospace;
+   justify-content: space-around;
+     
+}
+
+.admin__container{
+    display: flex;
+
+}
+
+.admin__edit button{
+    height: 60px;
+    margin:10px;
+    font-family:'Courier New', Courier, monospace;
+    color: azure;
+    
+    width:100px;
+    border: none;
+    
+    
+}
+
+.admin__edit button:hover{
+    cursor: pointer;
+    background-color: rgb(57, 56, 53);
+}

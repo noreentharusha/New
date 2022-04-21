@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import "./Login.css";
 
+
+
 function Login() {
 	
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
+	
 
 	async function loginUser(event) {
 		event.preventDefault()
@@ -23,16 +26,23 @@ function Login() {
 		const data = await response.json()
 
         if (data.user) {
-			localStorage.setItem('token', data.user)
-			alert('Login successful')
-			window.location.href = '/dashboard'
+			//localStorage.setItem('token', data.user)
+			alert("Login successful")
+			if(email==="admin@admin"){
+				window.location.href = '/admin'
+			}else{
+				
+				window.location.href = '/dashboard'
+			}
+		    
+	
 		} else {
 			alert('Please check your username and password')
 		}
 
 
 
-		console.log(data)
+		
 
 	}
 
@@ -59,9 +69,12 @@ function Login() {
 				/>
 				<br />
 				<input type="submit" value="Login" className="login__Button"/>
+
 			</form>
+
 		   </div>
-		  
+
+		   
 
 		 </div>
 
